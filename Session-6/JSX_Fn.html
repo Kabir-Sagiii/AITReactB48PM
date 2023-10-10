@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JSX Introduction</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      var pstyle = {
+        color: "green",
+        fontSize: "20px",
+        fontStyle: "italic",
+      };
+      function createUI(title, titleColor) {
+        // var title = "React JS Title";
+        return (
+          <div>
+            <h2
+              style={{
+                color: titleColor,
+                backgroundColor: "black",
+                padding: "20px",
+              }}
+            >
+              {title}
+            </h2>
+            <p style={pstyle}>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+              libero earum, exercitationem repellendus eius id numquam
+              distinctio reprehenderit unde eaque quae eos sint corporis, iusto
+              nulla magnam praesentium officiis dolorum, recusandae magni
+              assumenda. Saepe omnis sit, id quo accusantium at.
+            </p>
+          </div>
+        );
+      }
+
+      function Main() {
+        return (
+          <>
+            {createUI("React JS", "white")}
+            {createUI("Angular", "red")}
+            {createUI("Node JS", "green")}
+            {createUI("Mongodb", "blue")}
+          </>
+        );
+      }
+
+      ReactDOM.render(Main(), document.getElementById("root"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JSX Introduction</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      var pstyle = {
+        color: "green",
+        fontSize: "20px",
+        fontStyle: "italic",
+      };
+
+      const h2Ref = (
+        <h2
+          id="heading"
+          style={{ color: "red", backgroundColor: "black", padding: "20px" }}
+        >
+          React JS
+        </h2>
+      );
+      const pRef = (
+        <p style={pstyle}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+          expedita assumenda, itaque, voluptates magnam veritatis quasi incidunt
+          eum deleniti soluta, esse numquam. Dolore magnam itaque aliquam eos,
+          alias amet assumenda.s
+        </p>
+      );
+      var container = (
+        <>
+          {h2Ref} {pRef} {h2Ref} {pRef} {h2Ref} {pRef} {h2Ref} {pRef} {pRef}
+        </>
+      );
+
+      ReactDOM.render(container, document.getElementById("root"));
+    </script>
+  </body>
+</html>

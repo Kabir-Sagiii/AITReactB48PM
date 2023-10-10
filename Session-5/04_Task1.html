@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JSX Introduction</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      var container = (
+        <div>
+          <div>
+            <h2>React JS</h2>
+            <img
+              src="https://jslib.dev/wp-content/uploads/2022/03/Reactlogo.jpg"
+              width="500"
+              height="300"
+            />
+          </div>
+          <div>
+            <p>
+              ReactJS is a JS Library. Now it looks little easy but still need
+              to work on it
+            </p>
+          </div>
+        </div>
+      );
+
+      ReactDOM.render(container, document.getElementById("root"));
+    </script>
+  </body>
+</html>

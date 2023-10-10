@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+#nav {
+  height: 70px;
+  background-color: black;
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: white;
+  margin-right: 50px;
+  text-decoration: none;
+}
+#footer {
+  padding: 50px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}

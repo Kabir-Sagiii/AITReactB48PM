@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <style>
+      #react {
+        border: 4px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      var h2 = React.createElement(
+        "h2",
+        {
+          id: "react",
+          class: "mystyle",
+          style: { color: "red", backgroundColor: "black", padding: "40px" },
+        },
+        "React Element with Attribute"
+      );
+
+      ReactDOM.render(h2, document.getElementById("root"));
+    </script>
+  </body>
+</html>

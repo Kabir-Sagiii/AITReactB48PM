@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      const imgRef = React.createElement(
+        "img",
+        {
+          src: "https://th.bing.com/th/id/OIP.UEqTf_2kRlPVpKFjqAiR0gAAAA?pid=ImgDet&rs=1",
+          width: "500",
+          height: "500",
+        },
+        null
+      );
+
+      ReactDOM.render(imgRef, document.getElementById("root"));
+    </script>
+  </body>
+</html>

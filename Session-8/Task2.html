@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JSX Introduction</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function CreateUI(props) {
+        return (
+          <div
+            style={{
+              padding: "30px",
+              backgroundColor: props.color,
+              color: "white",
+              marginTop: "30px",
+            }}
+          >
+            <h1> {props.id} </h1>
+            <h2> {props.title} Title </h2>
+            <button>{props.title} Button</button>
+          </div>
+        );
+      }
+
+      function Main() {
+        return (
+          <div>
+            <CreateUI title={"React JS"} color={"black"} id={101} />
+
+            <CreateUI title={"Angular JS"} color={"red"} id={102} />
+
+            <CreateUI title={"Node JS"} color={"blue"} id={103}></CreateUI>
+          </div>
+        );
+      }
+
+      ReactDOM.render(<Main />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
