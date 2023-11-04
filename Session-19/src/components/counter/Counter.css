@@ -1,0 +1,7 @@
+.counterContainer {
+  width: 500px;
+  box-shadow: 0 0 10px black;
+  margin: 50px auto;
+  padding: 30px;
+  text-align: center;
+}
