@@ -1,0 +1,23 @@
+Products Data
+---------------
+methods type:get
+https://fakestoreapi.com/products
+Data Format:data sample
+
+
+Electronics Data
+----------------
+https://fakestoreapi.com/products/category/electronics
+
+
+Jewelery Data
+---------------
+https://fakestoreapi.com/products/category/jewelery
+
+MensClothing
+--------------
+https://fakestoreapi.com/products/category/men's clothing
+
+Womens clothing
+----------------
+https://fakestoreapi.com/products/category/women's clothing
